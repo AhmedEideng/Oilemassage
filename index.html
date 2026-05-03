@@ -905,7 +905,7 @@ async function sha256(message) {
 
 // عداد المخزون — يتغير عشوائياً علشان يبدو حقيقي
 (function(){
-  var counts = [5,6,7,8,9];
+  var counts = [15,16,17,18,19];
   var n = counts[Math.floor(Math.random()*counts.length)];
   var el = document.getElementById('stockCount');
   if(el) el.textContent = n;
@@ -918,7 +918,6 @@ async function sha256(message) {
     'طلب للتو عرض الـ 4 زجاجات!',
     'اشترى عرض الزجاجتين!',
     'طلب الكوليكشن الكامل!',
-    'أضاف للسلة للتو!'
   ];
   function showPopup(){
     var city = cities[Math.floor(Math.random()*cities.length)];
